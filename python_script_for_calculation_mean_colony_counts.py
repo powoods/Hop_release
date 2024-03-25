@@ -10,8 +10,8 @@ import pandas as pd
 
 def mean_counts(input_file, rxn_norm = False):
     '''
-    Takes input dataframe .csv file with colony counts from up to 3 races of 
-    powdery mildew, calculates the mean colony counts per genotype per race and 
+    Takes input dataframe .csv file with colony counts from any number of 
+    powdery mildew races, calculates the mean colony counts per genotype per race and 
     returns a dataframe object with calculations.
 
     Parameters
