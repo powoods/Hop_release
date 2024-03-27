@@ -12,7 +12,7 @@ pm$Mildew <- as.factor(pm$Mildew)
 
 
 ggplot(pm, aes(x = Mildew, y = Colony.count)) +
-       stat_summary(aes(group = Identifier), fun.y = mean, geom = "line") +
+       stat_summary(aes(group = Identifier, color = Identifier), fun.y = mean, geom = "line") +
        stat_summary(aes(color = Identifier), fun.data = mean_se, geom = "errorbar", width = 0.1) +
        stat_summary(aes(color = Identifier), fun.y = mean, geom = "point", size = 4, alpha=0.6) +
        xlab('Powdery Milew Race') + ylab('Mean Colony Counts')  + theme_bw()
